@@ -1,11 +1,11 @@
-import { Quote } from "lucide-react"
-import { Card, CardContent } from "@/components/ui/card"
-import { Container, Section, Eyebrow, Title, Grid } from "../styled"
+import { Quote } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Container, Section, Eyebrow, Title, Grid } from "../styled";
 
 const testimonials = [
   {
     quote:
-      "NR Apparel consistently delivers ahead of schedule with impeccable quality. Their communication and transparency are top-tier.",
+      "Gini & Mini Creations consistently delivers ahead of schedule with impeccable quality. Their communication and transparency are top-tier.",
     name: "Operations Director, EU Brand",
   },
   {
@@ -14,10 +14,11 @@ const testimonials = [
     name: "Sourcing Manager, US Retailer",
   },
   {
-    quote: "Their sustainability upgrades meaningfully reduced our scope 3 footprint. A forward-looking partner.",
+    quote:
+      "Their sustainability upgrades meaningfully reduced our scope 3 footprint. A forward-looking partner.",
     name: "Head of ESG, Global Label",
   },
-]
+];
 
 export default function TestimonialsSection() {
   return (
@@ -40,5 +41,5 @@ export default function TestimonialsSection() {
         </Grid>
       </Container>
     </Section>
-  )
+  );
 }
