@@ -67,7 +67,7 @@ export function SiteHeader() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right">
-              <div className="mt-6 flex flex-col gap-4">
+              <div className="mt-6 flex flex-col text-center mx-4 gap-4">
                 {nav.map((item) => (
                   <Link
                     key={item.href}
