@@ -6,6 +6,7 @@ import { Menu, Factory, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 const nav = [
   { href: "/", label: "Home" },
@@ -22,8 +23,14 @@ export function SiteHeader() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center gap-2">
-            <div className="inline-flex h-9 w-9 items-center justify-center rounded-md bg-emerald-600 text-white">
-              <Factory className="h-5 w-5" />
+            <div className="relative h-9 w-9">
+              <Image
+                src="/ginilogo.png"
+                alt="Gini & Mini Creations Logo"
+                fill
+                className="object-contain"
+                priority
+              />
             </div>
             <span className="text-base font-semibold tracking-tight">
               Gini & Mini Creations
